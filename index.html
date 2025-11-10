@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coffee Clicker</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>COFFEE CLICKER</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="sectionleft">
+        <div id="lefttopbox">
+          <h1 class="overskrift">UPGRADES</h1>
+          <button class="buy" id="boughtBarista" onclick="hireBarista()">
+            HIRE BARISTA: 200
+          </button>
+          <button class="buy" id="machine" onclick="buyMachine()">
+            BUY MACHINE: 300
+          </button>
+          <button class="buy" id="bean" onclick="betterBeans()">
+            BETTER BEANS: 400
+          </button>
+          <button class="buy" id="boost" onclick="marketingBoost()">
+            MARKET BOOST: 300
+          </button>
+          <button class="buy" id="rush" onclick="rushHour()">
+            RUSH HOUR: 200
+          </button>
+        </div>
+
+        <div id="leftbottombox">
+          <h1 class="overskrift">LEVEL</h1>
+          <button id="levelUp" onclick="levelUp()">LEVEL UP</button>
+          <h2 id="level">COST 5.000</h2>
+        </div>
+      </section>
+
+      <section id="sectionmiddle">
+        <img
+          onclick="sellCoffee()"
+          id="cof"
+          src="/images/pngtree-happy-coffee-cup-cartoon-clipart-png-image_14763931.png"
+          alt=""
+        />
+
+        <div id="buttons">
+          <button id="pluss" onclick="plussButton()">+</button>
+          <button id="minus" onclick="minusButton()">-</button>
+        </div>
+      </section>
+
+      <section id="sectionright">
+        <div id="righttopbox">
+          <h1 class="overskrift">STATS</h1>
+          <p>MONEY: <span id="money">0</span></p>
+          <p>BARISTAS: <span id="barista">0</span></p>
+          <p>MACHINE: <span id="machines">1</span></p>
+          <p>TYPE OF BEANS: <span id="betterBeans">ARABICA</span></p>
+          <p>BREWING TIME: <span id="brewingTime">6 SECONDS</span></p>
+          <p>COFFEE SOLD: <span id="coffeSold"></span></p>
+          <p>SALE PRICE: <span id="coffeePrice"></span>NOK</p>
+          <p>DEMAND: <span id="coffeeDemand">40</span>%</p>
+        </div>
+
+        <div id="rightbottombox">
+          <h1 class="overskrift">NOTIFICATIONS</h1>
+          <p id="rightBottom">WELCOME TO THE COFFEE CLICKER</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script src="script.js"></script>
